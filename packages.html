@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="wow.js"></script>
+<title>Tour</title>
+	 <meta charset="utf-8">
+	 <link href="style.css" rel="stylesheet" type="text/css"/>
+	 <link href="animate.css" rel="stylesheet" type="text/css"/>
+	  <link href="images/logo.jpg" rel="icon"/>
+	 </head>
+
+
+
+
+
+	 <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top wow fadeIn">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="new.html">TravTour</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="new.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="new.html">Packages</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="form.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section>
+<img class="img-responsive img" src="images/img6.jpg" alt="Chania">
+<h1 class="heading center wow fadeIn">Get The Best Travel Packages</h1>
+</section>
+<div class="container-fluid customPackageContainer">
+		<div class="row packageBgImage">
+			<div class="bgFilter"> &nbsp; </div>
+			<div class="col-md-2 xs-hidden"></div>
+			<div class="col-md-8 col-xs-12 text-white">
+
+				<div class="col-md-12 col-xs-12 text-center" id="backButtonContainer">
+
+				</div>
+
+				<form action="javascript:void(0);">
+					<div class="col-md-12 col-xs-12 text-center">
+						<h1>Get The Best Travel Packages</h1>
+						<div class="col-md-6 col-xs-12" style="margin-bottom:10px; margin-top:10px;">
+						<p class="inputHeading">Leaving From</p>
+						<input type="text" class="form-control" id="sourceNamePopup" style="width:100%;" placeholder="Enter Source" required="">
+						<input type="hidden" id="sourcePopupPlaceCode" />
+					</div>
+					<div class="col-md-6 col-xs-12" style="margin-bottom:10px; margin-top:10px;">
+						<p class="inputHeading">Going To</p>
+						<input type="text" class="form-control" id="destinationPopup" style="width:100%;" placeholder="Enter Destination" required="">
+						<input type="hidden" id="destinationPopupPlaceCode" />
+					</div>
+					<div class="clearfix"> </div>
+					<div class="col-md-6 col-xs-12" style="margin-bottom:10px;">
+						<input type="text" class="form-control" id="checkInPopup" placeholder="Departure Date" required="">
+					</div>
+					<div class="col-md-6 col-xs-12" style="margin-bottom:10px;">
+						<select class="form-control" id="durationPopup">
+						  <option value="1">1 Night/2 Days</option>
+						  <option value="2" selected="selected">2 Night/3 Days</option>
+						  <option value="3">3 Night/4 Days</option>
+						  <option value="4">4 Night/5 Days</option>
+						  <option value="5">5 Night/6 Days</option>
+						  <option value="6">6 Night/7 Days</option>
+						  <option value="7">7 Night/8 Days</option>
+						</select>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="col-md-6 col-xs-12" style="margin-bottom:10px;">
+						<input type="text" class="form-control" id="namePopup" placeholder="Name" name="name" autocomplete="name" required="">
+					</div>
+					<div class="col-md-6 col-xs-12" style="margin-bottom:10px;">
+						<input type="text" class="form-control" id="phonePopup" placeholder="Phone Number" name="tel" autocomplete="tel" required="">
+					</div>
+					<div class="clearfix"> </div>
+					<div class="col-md-6 col-xs-12" style="margin-bottom:10px;">
+						<input type="text" class="form-control" id="emailPopup" placeholder="Email" name="email" type="email" autocomplete="email" required="">
+					</div>
+					<div class="col-md-3 col-xs-6" style="margin-bottom:10px;">
+						<select class="form-control" id="budgetPopup">
+						  <option value="1">Economy</option>
+						  <option value="2" selected="selected">Mid-Range</option>
+						  <option value="3">Luxury</option>
+						</select>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<select class="form-control" id="adultsPopup">
+						  <option value="1">1 Adult</option>
+						  <option value="2" selected="selected">2 Adults</option>
+						  <option value="3">3 Adults</option>
+						  <option value="4">4 Adults</option>
+						  <option value="5">5 Adults</option>
+						  <option value="6">6 Adults</option>
+						  <option value="7">Group</option>
+						</select>
+					</div>
+					<div class="clearfix"> </div>
+
+					<div class="col-md-12 col-xs-12 text-center buttonsContainer" style="margin-top:40px; margin-bottom:20px;">
+						<button class="btn btn-primary btn-holidify submit" id="packageSubmitButton" onclick="submitTCPackageInput()">Get FREE Quotes</button>
+					</div>
+					</form>
+
+
+
+			</div>
+			<div class="col-md-2 xs-hidden"></div>
+		</div>
+           <br></br>
+		<!-- Why book with us -->
+		<div class="row packageSection lightColor">
+			<div class="col-md-4 col-md-offset-2 col-xs-12">
+				<h3 class="packageSectionHeading"> How it works</h3>
+				<ul class="packageList customPage">
+					<li>
+						<p class="itemNumber">1</p>
+						<p class="itemText">Tell Us Your Travel Needs <br /> <span class="larger"> Online form takes a minute to fill </span> </p>
+					</li>
+					<li>
+						<p class="itemNumber">2</p>
+						<p class="itemText">Get Customized Packages <br /> <span class="larger"> From 3 specialist travel agents </span> </p>
+					</li>
+					<li>
+						<p class="itemNumber">3</p>
+						<p class="itemText">Choose The Plan You Like <br /> <span class="larger"> Have a memorable holiday! </span> </p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<h3 class="packageSectionHeading"> Why you'll love us </h3>
+				<ul class="packageList customPage">
+					<li>
+						<p class="itemText"> <span class="glyphicon glyphicon-ok"></span> Get plans from destination experts </p>
+					</li>
+					<li>
+						<p class="itemText"> <span class="glyphicon glyphicon-ok"></span> Compare Quotes From 3 Companies </p>
+					</li>
+					<li>
+						<p class="itemText"> <span class="glyphicon glyphicon-ok"></span> Get Amazing Discounts on Packages </p>
+					</li>
+					<li>
+						<p class="itemText"> <span class="glyphicon glyphicon-ok"></span> Great Local Advice From Experts </p>
+					</li>
+					<li>
+						<p class="itemText"> <span class="glyphicon glyphicon-ok"></span> Clean, Safe & Reliable Arrangements </p>
+					</li>
+					<li>
+						<p class="itemText"> <span class="glyphicon glyphicon-ok"></span> Trusted Network Of 1000+ Agents </p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-2 hidden-xs"> </div>
+		</div>
+		<br></br>
+		
+	</div>
+	</body>
+	</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="wow.js"></script>
+<title>Tour</title>
+	 <meta charset="utf-8">
+	 <link href="style.css" rel="stylesheet" type="text/css"/>
+	 <link href="animate.css" rel="stylesheet" type="text/css"/>
+	  <link href="images/logo.jpg" rel="icon"/>
+	 </head>
+
+	 
+	 
+	 
+	 
+	 <body>
+	 
+<nav class="navbar navbar-inverse navbar-fixed-top wow fadeIn">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="new.html">TravTour</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="new.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="new.html">Contact Us</a></li> 
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>		
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="form.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section>
+<img class="img-responsive img" src="images/img1.jpg" alt="Chania">
+<h1 class="heading center wow fadeIn">Travel And Tourism</h1>
+</section>
+<style type="text/css">
+#main-menu{ display:none;}
+@media (max-width: 768px) {
+  .nav li a:hover .mobilemenu{ display:block; margin:0 10px;}
+  .nav{ display:none;}
+  #main-menu {
+   top: 74px;
+    position: absolute;
+    width: 100%;
+	text-align:center;
+}
+  
+  
+}
+</style>
+<script>
+$(document).ready(function() {
+
+	/* MAIN MENU */
+	$('#main-menu > li:has(ul.sub-menu)').addClass('parent');
+	$('ul.sub-menu > li:has(ul.sub-menu) > a').addClass('parent');
+
+	$('#menu-toggle').click(function() {
+		$('#main-menu').slideToggle(300);
+		return false;
+	});
+
+	$(window).resize(function() {
+		if ($(window).width() > 768) {
+			$('#main-menu').removeAttr('style');
+		}
+	});
+
+});
+</script><div class="clear40"></div>
+<div class="bodyContainer">
+  <div class="wraper">
+  <center>
+    <h1 class="main_heading">Contact Us</h1>
+	</center>
+    <br>
+    <div class="our-team">
+      <div class="grid-12">
+        <div class="grid-3">
+          <div class="contact"> <img src="images/emaillogo.jpg">
+            <h2>E-mail</h2>
+          </div>
+          <p><a href="mailto:akashdeep448@gmail.com" >akashdeep448@gmail.com</a> </p>
+          <p>(Please mail by 8pm for any tours departing the next morning)</p>
+          </div>
+		  <br></br>
+        <div class="grid-3">
+          <div class="contact"> <img src="images/contactuslogo.jpg">
+            <h2>Phone</h2>
+          </div>
+          <p>+91 9840378556</p>
+          <p>(Every day from 8am to 9pm Indian Standard Time)</p>
+        </div>
+		<br></br>
+        <div class="grid-3">
+          <div class="contact"> <img src="images/homelogo.jpg">
+            <h2>Office</h2>
+          </div>
+          <div itemscope itemtype="LocalBusiness">
+          <div itemprop="address" itemscope itemtype="PostalAddress">
+ <span itemprop="streetAddress"><p>1/26,<br>
+            ABC Center,<br>
+            Akber House, 1st floor<br>
+            above Sheetal Medical Store,<br>
+            Ganghi Ji Road,<br>
+            Opposite Taj Restaurant,<br>
+            Colaba,</span><span itemprop="addressLocality"> Mumbai </span> - <span itemprop="postalCode">400 039</span></p></div>
+</div>
+
+        </div>
+		<br></br>
+        <div class="grid-3">
+          <div class="contact"> <img src="images/clocklogo.jpg">
+            <h2>Office Timings</h2>
+          </div>
+          <p>Daily: 8am to 6pm</p>
+                   </div>
+      </div>
+	  <br></br>
+      <div class="grid-12">
+        <div class="grid-6">
+		<div class="contact"> <img src="images/finduslogo.jpg">
+          <h2><strong>How to Find Us</strong></h2>
+          <p>It's best to book tours online, by phone, or by email, but if you need to find us, our office is located on Nowroji Fardonji 
+		  Road which is the street next to Leopold Cafe. You will see our signboard attached to a light pole. Our office is located in the 
+		  building behind SSS Corner Store. Go through SSS Corner Store, up the stairs, to the right, and into the Unique Business Service 
+		  Centre. </p>
+        </div>
+		<br></br>
+        <div class="grid-6">
+		<div class="contact"> <img src="images/warninglogo.jpg">
+          <h2><strong>Warning</strong></h2>
+          <p>Be wary that there are other tour operators on the street that may claim to be Reality Tours. You will recognize our staff by our 
+		  light blue collared shirts with the Reality Tours logo on it.</p>
+        </div>
+      </div>
+	  
+	  
